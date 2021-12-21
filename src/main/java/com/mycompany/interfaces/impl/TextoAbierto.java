@@ -2,6 +2,7 @@
 package com.mycompany.interfaces.impl;
 
 import com.mycompany.interfaces.IPregunta;
+import java.util.List;
 
 /**
  *
@@ -10,8 +11,33 @@ import com.mycompany.interfaces.IPregunta;
  */
 public class TextoAbierto implements IPregunta {
 
+    private String pregunta;
+    private List<String> respuestas;
+    
+    
+    public TextoAbierto(String pregunta, List<String> respuestas) {
+        this.pregunta = pregunta;
+        this.respuestas = respuestas;
+    }
+    
     @Override
     public void listarPregunta() {
+    }
+
+    public String getPregunta() {
+        return pregunta;
+    }
+
+    public void setPregunta(String pregunta) {
+        this.pregunta = pregunta;
+    }
+
+    public List<String> getRespuestas() {
+        return respuestas;
+    }
+
+    public void setRespuestas(List<String> respuestas) {
+        this.respuestas = respuestas;
     }
 
 }

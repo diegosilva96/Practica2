@@ -23,6 +23,16 @@ public class Encuesta implements IPregunta {
         this.preguntas = preguntas;
     }
     
+    public void agregarPregunta(IPregunta pregunta) {
+        if (pregunta != null) {
+            this.preguntas.add(pregunta);
+        }
+    }
+    
+    public void quitarPregunta(int posicion) {
+        this.preguntas.remove(posicion);
+    }
+    
     @Override
     public void listarPregunta() {
     }

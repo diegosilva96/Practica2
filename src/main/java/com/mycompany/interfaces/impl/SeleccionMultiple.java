@@ -12,14 +12,36 @@ import java.util.List;
  */
 public class SeleccionMultiple implements IPregunta {
     
+    private String pregunta;
     private List<String> respuestas;
 
     public SeleccionMultiple() {
         this.respuestas = new ArrayList<String>();
     }
+
+    public SeleccionMultiple(String pregunta, List<String> respuestas) {
+        this.pregunta = pregunta;
+        this.respuestas = respuestas;
+    }
     
     @Override
     public void listarPregunta() {
+    }
+
+    public String getPregunta() {
+        return pregunta;
+    }
+
+    public void setPregunta(String pregunta) {
+        this.pregunta = pregunta;
+    }
+
+    public List<String> getRespuestas() {
+        return respuestas;
+    }
+
+    public void setRespuestas(List<String> respuestas) {
+        this.respuestas = respuestas;
     }
 
 }

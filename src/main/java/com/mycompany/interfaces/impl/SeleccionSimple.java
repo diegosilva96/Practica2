@@ -2,6 +2,7 @@
 package com.mycompany.interfaces.impl;
 
 import com.mycompany.interfaces.IPregunta;
+import java.util.List;
 
 /**
  *
@@ -9,9 +10,33 @@ import com.mycompany.interfaces.IPregunta;
  * @version 21 dic. 2021 17:42:05
  */
 public class SeleccionSimple implements IPregunta {
-
+    
+    private String pregunta;
+    private List<String> respuestas;
+    
     @Override
     public void listarPregunta() {
+    }
+
+    public SeleccionSimple(String pregunta, List<String> respuestas) {
+        this.pregunta = pregunta;
+        this.respuestas = respuestas;
+    }
+
+    public String getPregunta() {
+        return pregunta;
+    }
+
+    public void setPregunta(String pregunta) {
+        this.pregunta = pregunta;
+    }
+
+    public List<String> getRespuestas() {
+        return respuestas;
+    }
+
+    public void setRespuestas(List<String> respuestas) {
+        this.respuestas = respuestas;
     }
 
 }
