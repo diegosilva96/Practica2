@@ -13,6 +13,10 @@ public class Encuesta implements IPregunta {
     private List<IPregunta> preguntas;
     private List<IPregunta> respuestas;
     
+    private Calendar fechaActivacion;
+    private Calendar fechaFinalizacion;
+    private IEstadoEncuesta estado;
+    
     public Encuesta() {
         preguntas = new ArrayList<IPregunta>();
     }
@@ -73,4 +77,29 @@ public class Encuesta implements IPregunta {
         
         return new RespuestaIterator( respuestas );
     }
+    
+    public IEstadoEncuesta getEstado() {
+        return estado;
+    }
+
+    public void setEstado(IEstadoEncuesta estado) {
+        this.estado = estado;
+    }
+
+    public Calendar getFechaFinalizacion() {
+        return fechaFinalizacion;
+    }
+
+    public void setFechaFinalizacion(Calendar fechaFinalizacion) {
+        this.fechaFinalizacion = fechaFinalizacion;
+    }
+
+    public Calendar getFechaActivacion() {
+        return fechaActivacion;
+    }
+
+    public void setFechaActivacion(Calendar fechaActivacion) {
+        this.fechaActivacion = fechaActivacion;
+    }
+
 }
