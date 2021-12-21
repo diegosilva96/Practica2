@@ -1,8 +1,9 @@
-package com.mycompany.interfaces.impl;
+package com.mycompany.impl;
 
 import java.util.Calendar;
 
-import com.mycompany.interfaces.Interfaces.IEstadoEncuesta;
+import com.mycompany.interfaces.IEstadoEncuesta;
+
 
 public class EncuestaVigente implements IEstadoEncuesta {
     private Encuesta Encuesta;

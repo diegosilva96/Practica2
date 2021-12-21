@@ -1,8 +1,8 @@
-package com.mycompany.interfaces.impl;
+package com.mycompany.impl;
 
-import javax.sound.sampled.SourceDataLine;
 
-import com.mycompany.interfaces.Interfaces.IEstadoEncuesta;
+import com.mycompany.interfaces.IEstadoEncuesta;
+
 
 public class EncuestaFinalizada implements IEstadoEncuesta {
     private Encuesta Encuesta;
