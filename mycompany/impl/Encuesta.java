@@ -11,6 +11,7 @@ public class Encuesta implements IPregunta {
     private String descripcion;
     private String imagen;
     private List<IPregunta> preguntas;
+    private List<IPregunta> respuestas;
     
     public Encuesta() {
         preguntas = new ArrayList<IPregunta>();
@@ -68,5 +69,8 @@ public class Encuesta implements IPregunta {
     public void setPreguntas(List<IPregunta> preguntas) {
         this.preguntas = preguntas;
     }
-
+    public IRespuestaIterator iterator() {
+        
+        return new RespuestaIterator( respuestas );
+    }
 }
