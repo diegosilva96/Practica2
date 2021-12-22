@@ -23,6 +23,8 @@ public class Encuesta implements IPregunta {
     }
 
     public Encuesta(String titulo, String descripcion, String imagen, List<IPregunta> preguntas) {
+        setEstado(new EncuestaCreada());
+        preguntas = new ArrayList<IPregunta>();
         this.titulo = titulo;
         this.descripcion = descripcion;
         this.imagen = imagen;
