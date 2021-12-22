@@ -11,7 +11,7 @@ public class Encuesta implements IPregunta {
     private String descripcion;
     private String imagen;
     private List<IPregunta> preguntas;
-    private List<IPregunta> respuestas;
+   
     
     private Calendar fechaActivacion;
     private Calendar fechaFinalizacion;
@@ -75,7 +75,7 @@ public class Encuesta implements IPregunta {
     }
     public IRespuestaIterator iterator() {
         
-        return new RespuestaIterator( respuestas );
+        return new RespuestaIterator( preguntas );
     }
     
     public IEstadoEncuesta getEstado() {
