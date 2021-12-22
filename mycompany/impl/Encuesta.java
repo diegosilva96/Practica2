@@ -18,6 +18,7 @@ public class Encuesta implements IPregunta {
     private IEstadoEncuesta estado;
     
     public Encuesta() {
+        setEstado(new EncuestaCreada());
         preguntas = new ArrayList<IPregunta>();
     }
 
