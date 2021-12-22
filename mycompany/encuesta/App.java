@@ -21,7 +21,10 @@ public class App {
         respuestas.add("NO");
         
         encuesta.agregarPregunta(new SeleccionSimple("Selecciona tu edad", respuestas));
-    
+        encuesta.procesar();
+        encuesta.procesar();
+        encuesta.procesar();
+        
     }
 
 }
