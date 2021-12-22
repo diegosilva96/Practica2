@@ -1,0 +1,6 @@
+El patrón utilizado en cada parte del proceso
+1.Iterator: implementado en RespuestaIterator y llamado en Encuesta
+2.State: Los states principales EncuestaCreada,EncuestaProgramada,EncuestaVigente
+EncuestaFinalizado
+3.Composite: Se utilizó para la composición de las encuestas con diferentes tipos 
+preguntas, utilizado en SelecciónMúltiple,SeleccionSimple y TextoAbierto.
